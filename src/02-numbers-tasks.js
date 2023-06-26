@@ -51,13 +51,9 @@ function getCircleCircumference(radius) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-// function getAverage(value1, value2) {
-//   const sum = value1 + value2;
-//   if (!isFinite(sum)) {
-//     return sum;
-//   }
-//   return sum / 2;
-// }
+function getAverage(/* value1, value2 */) {
+  throw new Error('Not implemented');
+}
 
 /**
  * Returns a distance between two points by cartesian coordinates.
