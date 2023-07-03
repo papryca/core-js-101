@@ -24,6 +24,7 @@
  *
  */
 function getComposition(f, g) {
+  // eslint-disable-next-line func-names
   return function (x) {
     return f(g(x));
   };
@@ -47,6 +48,7 @@ function getComposition(f, g) {
  *
  */
 function getPowerFunction(exponent) {
+  // eslint-disable-next-line func-names
   return function (x) {
     return x ** exponent;
   };
@@ -153,6 +155,7 @@ function logger(/* func, logFunc */) {
  *   partialUsingArguments(fn, 'a','b','c','d')() => 'abcd'
  */
 function partialUsingArguments(fn, ...args1) {
+  // eslint-disable-next-line func-names
   return function (...args2) {
     return fn(...args1, ...args2);
   };
@@ -179,6 +182,7 @@ function partialUsingArguments(fn, ...args1) {
 function getIdGeneratorFunction(startFrom) {
   let currentId = startFrom;
 
+  // eslint-disable-next-line func-names
   return function () {
     const id = currentId;
     currentId += 1;
